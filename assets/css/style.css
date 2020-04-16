@@ -1,0 +1,522 @@
+@import url(https://fonts.googleapis.com/css?family=Anton|Black+Han+Sans|Kanit:700|Noto+Sans+HK:900|Noto+Sans+JP:700|Noto+Sans+SC:700|Noto+Sans+TC:700|Oswald:700&display=swap&subset=chinese-hongkong,chinese-simplified,chinese-traditional,cyrillic,japanese,korean,thai,vietnamese);
+body {
+  margin-top: auto !important;
+}
+
+.menu-module--container--2c7PG {
+  position: relative;
+  height: 8rem;
+  margin-top: 0 !important;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: "Valorant";
+  src: url("../fonts/Valorant Font.ttf");
+}
+
+@font-face {
+  font-family: Tungsten-Bold;
+  src: url("../fonts/Tungsten.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DINNext";
+  src: url("../fonts/DINNext.woff2") format("woff2");
+}
+
+/*body {
+    background-color: $vColor1;
+}
+
+div {
+    font-family: "Valorant";
+}*/
+@font-face {
+  font-family: "DIN Next LT Pro Bold";
+  src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot");
+  src: url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.woff") format("woff"), url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3a88649e176a40a6d80b395ca0ae430d.svg#DIN Next LT Pro Bold") format("svg");
+}
+
+@font-face {
+  font-family: "Rational TW";
+  src: url("//db.onlinewebfonts.com/t/dee482e83301b5964815f140bf974e9e.eot");
+  src: url("//db.onlinewebfonts.com/t/dee482e83301b5964815f140bf974e9e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/dee482e83301b5964815f140bf974e9e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/dee482e83301b5964815f140bf974e9e.woff") format("woff"), url("//db.onlinewebfonts.com/t/dee482e83301b5964815f140bf974e9e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/dee482e83301b5964815f140bf974e9e.svg#Rational TW") format("svg");
+}
+
+:root {
+  --v-red: #ff4655;
+  --v-white: #ece8e1;
+  --v-black: #0f1923;
+  --v-outline: rgba(236, 232, 225, 0.5);
+  --v-lock_in-unselected-background: #9D9F9F;
+  --v-lock_in-unselected-text: #74787A;
+  --v-lock_in-selected-background: #B3FDFE;
+  --v-lock_in-selected-text: #73ACB5;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 75%;
+  font-size: 10px;
+  margin: 0;
+  background-color: var(--v-black);
+  color: var(--v-white);
+  font-family: "Valorant";
+}
+
+.box {
+  width: 50%;
+  margin: auto;
+}
+
+#logo-container {
+  width: 60%;
+  margin: 200px auto 30px auto;
+}
+
+#logo-container .logo {
+  fill: var(--v-white);
+}
+
+#caption {
+  height: 141px;
+  overflow: hidden;
+}
+
+#caption h1 {
+  margin: 0;
+  color: var(--v-white);
+  font-family: Tungsten-Bold, arial, georgia, sans-serif;
+  font-weight: 400;
+  font-size: 15em;
+  line-height: .94;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.betaText {
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-weight: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-family: Tungsten-Bold, arial, georgia, sans-serif;
+}
+
+button {
+  font-family: "DIN Next LT Pro Bold";
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 3rem;
+  position: relative;
+  display: block;
+  font-size: 1.9rem;
+  padding: 0.7rem;
+  border: 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--v-white);
+}
+
+button:hover {
+  color: var(--v-white);
+}
+
+button::before,
+button::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(50% - 0.4rem);
+  width: 100%;
+  border: 1px solid var(--v-outline);
+  left: 0;
+}
+
+button::before {
+  border-bottom: 0;
+  top: 0;
+}
+
+button::after {
+  border-top: 0;
+  bottom: 0;
+}
+
+/* LABEL  */
+.label {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.label:before {
+  content: "";
+  height: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/* Hover Effect */
+.hover-effect {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  top: 0;
+  left: -5%;
+  z-index: 1;
+  background-color: var(--v-red);
+  -webkit-transform: translateX(-100%) skew(-10deg);
+          transform: translateX(-100%) skew(-10deg);
+  transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+button:hover .hover-effect {
+  -webkit-transform: translateX(0) skew(-10deg);
+          transform: translateX(0) skew(-10deg);
+}
+
+/* Label Text */
+.label-text {
+  position: relative;
+  display: block;
+  padding: 1.9rem 3rem;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.label-text:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.6rem;
+  width: 0.6rem;
+  right: 0;
+  bottom: 0;
+  background-color: var(--v-black);
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+button:hover .label-text:after {
+  background-color: var(--v-white);
+}
+
+/* OUTLINE BUTTON */
+.outline {
+  color: var(--v-white);
+}
+
+.outline .label::before,
+.outline .label::after {
+  border: 1px solid var(--v-outline);
+}
+
+/* OUTLINE RED BUTTON */
+.outline + .red {
+  color: var(--v-red);
+}
+
+.outline + .red:hover {
+  color: var(--v-white);
+}
+
+.outline + .red .label::before,
+.outline + .red .label::after {
+  border-color: var(--v-red);
+}
+
+/* PRIMARY BUTTON */
+.primary {
+  color: var(--v-black);
+}
+
+.primary .label::before {
+  background-color: var(--v-white);
+}
+
+/*Map images*/
+label[for="Haven"] {
+  background-image: url("../images/maps/Haven.jpeg");
+}
+
+label[for="Bind"] {
+  background-image: url("../images/maps/Bind.jpeg");
+}
+
+label[for="Split"] {
+  background-image: url("../images/maps/Split.jpeg");
+}
+
+/*Agent images*/
+label[for="Brimstone"] {
+  background-image: url("../images/agents/Brimstone.png");
+}
+
+label[for="Cypher"] {
+  background-image: url("../images/agents/Cypher.png");
+}
+
+label[for="Jett"] {
+  background-image: url("../images/agents/Jett.png");
+}
+
+label[for="Phoenix"] {
+  background-image: url("../images/agents/Phoenix.png");
+}
+
+label[for="Raze"] {
+  background-image: url("../images/agents/Raze.png");
+}
+
+label[for="Sage"] {
+  background-image: url("../images/agents/Sage.png");
+}
+
+label[for="Sova"] {
+  background-image: url("../images/agents/Sova.png");
+}
+
+label[for="Breach"] {
+  background-image: url("../images/agents/Breach.png");
+}
+
+label[for="Omen"] {
+  background-image: url("../images/agents/Omen.png");
+}
+
+label[for="Viper"] {
+  background-image: url("../images/agents/Viper.png");
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form#map-selector {
+  width: 960px;
+  height: 120px;
+}
+
+form#map-selector .item {
+  width: 320px;
+  height: 160px;
+  border: 1px solid var(--v-red);
+}
+
+form#map-selector .item:hover label {
+  background-size: 105%;
+  background-position: -8px -4px;
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+form#map-selector .item label {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+form#agents-selector {
+  width: 1280px;
+  height: 128px;
+  display: none;
+}
+
+form#agents-selector .item {
+  width: 128px;
+  height: 128px;
+}
+
+form#agents-selector .item:hover label {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+form#agents-selector .item label {
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+
+form .selector {
+  margin: 4rem 0 200px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form .selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form .selector input:checked + label {
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  filter: none !important;
+}
+
+form .selector input:active + label {
+  opacity: .9;
+}
+
+form .selector .item {
+  overflow: hidden;
+  position: relative;
+}
+
+form .selector .item:hover label {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+}
+
+form .selector .item label {
+  margin-top: -12px;
+  cursor: pointer;
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 100ms ease-in;
+  -webkit-transition: all 0.350s ease-in-out;
+  transition: all 0.350s ease-in-out;
+}
+
+form .selector .item .description {
+  line-height: 160px;
+  pointer-events: none;
+}
+
+form .selector .item .description span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Valorant";
+  font-size: 36px;
+  color: var(--v-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-text-stroke: 0.5px black;
+}
+
+#SubmitBox {
+  cursor: not-allowed;
+  display: none;
+  margin: 100px auto;
+  width: 304px;
+  height: 64px;
+  background-color: var(--v-lock_in-unselected-background);
+  text-align: center;
+  line-height: 64px;
+}
+
+#SubmitBox span {
+  text-transform: uppercase;
+  font-family: "DINNext";
+  font-size: 29px;
+  color: var(--v-lock_in-unselected-text);
+}
+
+#ChosenAgents-container {
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#ChosenAgents-container #ChosenAgents {
+  margin: 4rem 0 200px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 720px;
+  height: 128px;
+}
+
+#ChosenAgents-container #ChosenAgents .item {
+  width: 129px;
+  height: 250px;
+}
+
+#ChosenAgents-container #ChosenAgents .item img {
+  width: 128px;
+  height: 128px;
+  border: 1px solid #FFFFFF;
+}
+
+#ChosenAgents-container #ChosenAgents .item .site-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 72px;
+}
+
+#ChosenAgents-container #ChosenAgents .item .site-container .chosenSite-container {
+  width: 100%;
+  text-align: center;
+}
+
+#ChosenAgents-container #ChosenAgents .item .site-container .chosenSite-container .chosenSite {
+  font-size: 0px;
+  color: var(--v-red);
+}
+
+#ChosenAgents-container #ChosenAgents .item .site-container span {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  font-family: "Rational TW";
+  font-size: 32px;
+  line-height: 70.5px;
+}
+/*# sourceMappingURL=style.css.map */
